@@ -68,7 +68,7 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 border-t border-white/10 text-center text-light/40 text-sm">
-          <p>&copy; {currentYear} Your Name. Built with React + Vite. Designed with passion at UIUC.</p>
+          <p>&copy; {currentYear} YASH PATEL. Built & Designed with passion at UIUC.</p>
         </div>
       </div>
     </footer>
