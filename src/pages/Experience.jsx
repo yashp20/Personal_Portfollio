@@ -1,21 +1,18 @@
 import { motion } from 'framer-motion';
 import Container from '../components/layout/Container';
 import SectionTitle from '../components/ui/SectionTitle';
-import { experience, education } from '../data/experience';
-import { skillCategories } from '../data/skills';
+import { experience } from '../data/experience';
 
 export default function Experience() {
   return (
     <div className="page-transition pt-32 pb-20">
       <Container>
-        <SectionTitle subtitle="My professional journey and technical expertise">
-          Experience & Skills
+        <SectionTitle subtitle="My professional journey and internships">
+          Work Experience
         </SectionTitle>
 
         {/* Experience Timeline */}
-        <div className="max-w-4xl mx-auto mb-20">
-          <h3 className="text-3xl font-display font-bold text-accent mb-8">Work Experience</h3>
-          
+        <div className="max-w-4xl mx-auto">
           <div className="space-y-8">
             {experience.map((exp, index) => (
               <motion.div
@@ -62,102 +59,30 @@ export default function Experience() {
           </div>
         </div>
 
-        {/* Education */}
-        <div className="max-w-4xl mx-auto mb-20">
-          <h3 className="text-3xl font-display font-bold text-accent mb-8">Education</h3>
-          
-          {education.map((edu, index) => (
-            <motion.div
-              key={edu.id}
-              className="glass-effect rounded-xl p-6 md:p-8"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
+        {/* Call to Action */}
+        <motion.div
+          className="max-w-4xl mx-auto mt-16"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+        >
+          <div className="glass-effect rounded-2xl p-8 text-center">
+            <h3 className="text-2xl font-display font-bold text-accent mb-4">
+              Interested in working together?
+            </h3>
+            <p className="text-light/70 mb-6">
+              I'm always open to new opportunities and collaborations. Let's connect and build something amazing!
+            </p>
+            <motion.a
+              href="/contact"
+              className="inline-block px-8 py-3 bg-gradient-to-r from-primary to-accent text-white font-mono text-sm uppercase tracking-widest rounded"
+              whileHover={{ y: -3, scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
             >
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
-                <div>
-                  <h4 className="text-2xl font-display font-bold text-accent mb-1">
-                    {edu.school}
-                  </h4>
-                  <p className="text-primary font-bold mb-2">{edu.degree}</p>
-                  <p className="text-light/60">GPA: {edu.gpa}</p>
-                </div>
-                <p className="text-light/60 text-sm">{edu.duration}</p>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-6 mt-6">
-                <div>
-                  <h5 className="text-accent font-bold mb-3">Relevant Coursework</h5>
-                  <ul className="space-y-2">
-                    {edu.coursework.map((course, i) => (
-                      <li key={i} className="text-light/70 text-sm flex items-start gap-2">
-                        <span className="text-accent">▸</span>
-                        {course}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div>
-                  <h5 className="text-accent font-bold mb-3">Achievements</h5>
-                  <ul className="space-y-2">
-                    {edu.achievements.map((achievement, i) => (
-                      <li key={i} className="text-light/70 text-sm flex items-start gap-2">
-                        <span className="text-accent">★</span>
-                        {achievement}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-
-        {/* Skills */}
-        <div className="max-w-6xl mx-auto">
-          <h3 className="text-3xl font-display font-bold text-accent mb-8 text-center">Technical Skills</h3>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {skillCategories.map((category, index) => (
-              <motion.div
-                key={category.id}
-                className="glass-effect rounded-xl p-6"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                whileHover={{ borderColor: 'var(--accent)', y: -5 }}
-              >
-                <div className="text-4xl mb-4">{category.icon}</div>
-                <h4 className="text-xl font-display font-bold text-accent mb-4">
-                  {category.category}
-                </h4>
-                
-                <div className="space-y-3">
-                  {category.skills.map((skill, i) => (
-                    <div key={i}>
-                      <div className="flex justify-between mb-1">
-                        <span className="text-light/80 text-sm">{skill.name}</span>
-                        <span className="text-accent text-sm">{skill.level}%</span>
-                      </div>
-                      <div className="h-1 bg-dark rounded-full overflow-hidden">
-                        <motion.div
-                          className="h-full bg-gradient-to-r from-primary to-accent"
-                          initial={{ width: 0 }}
-                          whileInView={{ width: `${skill.level}%` }}
-                          viewport={{ once: true }}
-                          transition={{ duration: 1, delay: 0.2 }}
-                        />
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </motion.div>
-            ))}
+              Get In Touch
+            </motion.a>
           </div>
-        </div>
+        </motion.div>
       </Container>
     </div>
   );
