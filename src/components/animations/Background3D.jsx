@@ -57,7 +57,7 @@ function RotatingIcosahedron() {
 
   return (
     <mesh ref={ref}>
-      <icosahedronGeometry args={[2, 0]} />
+      <icosahedronGeometry args={[4, 0]} />
       <meshBasicMaterial color="#00d9ff" wireframe transparent opacity={0.3} />
     </mesh>
   );
