@@ -1,15 +1,13 @@
-import { motion } from 'framer-motion';
-import Container from '../components/layout/Container';
-import SectionTitle from '../components/ui/SectionTitle';
-import { interests } from '../data/skills';
+import { motion } from "framer-motion";
+import Container from "../components/layout/Container";
+import SectionTitle from "../components/ui/SectionTitle";
+import { interests } from "../data/skills";
 
 export default function About() {
   return (
     <div className="page-transition pt-32 pb-20">
       <Container>
-        <SectionTitle subtitle="Get to know me better">
-          About Me
-        </SectionTitle>
+        <SectionTitle subtitle="Get to know me better">About Me</SectionTitle>
 
         {/* Main content */}
         <motion.div
@@ -22,23 +20,43 @@ export default function About() {
           <div className="glass-effect rounded-2xl p-8 md:p-12 mb-12">
             <div className="prose prose-invert prose-lg max-w-none">
               <p className="text-light/90 leading-relaxed mb-6">
-                I'm a Computer Science + student at the <span className="text-accent font-bold">University of Illinois Urbana-Champaign</span>
-                . My journey in tech is driven by an insatiable curiosity 
-                and a passion for creating innovative solutions that make a real impact.
+                I'm a Computer Science + student at the{" "}
+                <span className="text-accent font-bold">
+                  University of Illinois Urbana-Champaign
+                </span>
+                . My journey in tech is driven by an insatiable curiosity and a
+                passion for creating innovative solutions that make a real
+                impact.
               </p>
-              
+
               <p className="text-light/90 leading-relaxed mb-6">
-                From building machine learning models that push the boundaries of what's possible to creating 
-                software that scale to millions of users, I thrive on tackling complex challenges. 
-                My experience spans <span className="text-accent font-bold">Full-Dtack Development</span>, 
-                <span className="text-accent font-bold"> Artificial Intelligence</span>,
-                and <span className="text-accent font-bold">Systems Programming</span>.
+                From building machine learning models that push the boundaries
+                of what's possible to creating software that scale to millions
+                of users, I thrive on tackling complex challenges. My experience
+                spans{" "}
+                <span className="text-accent font-bold">
+                  Full-Dtack Development
+                </span>
+                ,
+                <span className="text-accent font-bold">
+                  {" "}
+                  Artificial Intelligence
+                </span>
+                , and{" "}
+                <span className="text-accent font-bold">
+                  Systems Programming
+                </span>
+                .
               </p>
 
               <p className="text-light/90 leading-relaxed">
-                Outside of coding, I enjoy staying active and balanced. You’ll usually find me at the <span className="text-accent font-bold">Gym</span>, 
-                playing <span className="text-accent font-bold">Pickleball</span>, or spending time with friends. Whether it’s workouts, pickleball, 
-                or time with friends, I value the energy and balance that keep me motivated in and out of tech.
+                Outside of coding, I enjoy staying active and balanced. You’ll
+                usually find me at the{" "}
+                <span className="text-accent font-bold">Gym</span>, playing{" "}
+                <span className="text-accent font-bold">Pickleball</span>, or
+                spending time with friends. Whether it’s workouts, pickleball,
+                or time with friends, I value the energy and balance that keep
+                me motivated in and out of tech.
               </p>
             </div>
           </div>
@@ -59,7 +77,7 @@ export default function About() {
             {interests.map((interest, index) => (
               <motion.div
                 key={interest.id}
-                className="glass-effect rounded-xl p-6 hover:border-accent transition-colors"
+                className="glass-effect rounded-xl p-6 hover:border-accent transition-colors text-center flex flex-col items-center"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -67,9 +85,11 @@ export default function About() {
                 whileHover={{ y: -5 }}
               >
                 <div className="text-4xl mb-4">{interest.icon}</div>
+
                 <h4 className="text-xl font-display font-bold text-accent mb-2">
                   {interest.name}
                 </h4>
+
                 <p className="text-light/70 text-sm leading-relaxed">
                   {interest.description}
                 </p>
@@ -92,15 +112,24 @@ export default function About() {
             <ul className="space-y-4 text-light/80">
               <li className="flex items-start gap-3">
                 <span className="text-accent text-xl">▸</span>
-                <span>I picked up Pickleball about a year ago and love to play doubles!</span>
+                <span>
+                  I picked up Pickleball about a year ago and love to play
+                  doubles!
+                </span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-accent text-xl">▸</span>
-                <span>I like to workout and apply the same mindset in the gym as I do in coding</span>
+                <span>
+                  I like to workout and apply the same mindset in the gym as I
+                  do in coding
+                </span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-accent text-xl">▸</span>
-                <span>I like to play video games with my friends in a compettive manner</span>
+                <span>
+                  I like to play video games with my friends in a compettive
+                  manner
+                </span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-accent text-xl">▸</span>
@@ -108,7 +137,9 @@ export default function About() {
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-accent text-xl">▸</span>
-                <span>Believe that the best code is the code you don't have to write</span>
+                <span>
+                  Believe that the best code is the code you don't have to write
+                </span>
               </li>
             </ul>
           </div>
