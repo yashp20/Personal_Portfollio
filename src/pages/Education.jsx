@@ -12,60 +12,71 @@ export default function Education() {
         </SectionTitle>
 
         {/* Education Details */}
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           {education.map((edu, index) => (
             <motion.div
               key={edu.id}
-              className="glass-effect rounded-xl p-6 md:p-8 mb-8"
+              className="glass-effect rounded-xl p-8 md:p-10 mb-8"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              {/* Header */}
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-6">
-                <div>
-                  <h4 className="text-2xl md:text-3xl font-display font-bold text-accent mb-2">
-                    {edu.school}
-                  </h4>
-                  <p className="text-primary font-bold text-lg mb-2">{edu.degree}</p>
-                  <p className="text-light/60 text-lg">GPA: <span className="text-accent font-bold">{edu.gpa}</span></p>
-                </div>
-                <p className="text-light/60 text-sm mt-2 md:mt-0">{edu.duration}</p>
-              </div>
-
-              {/* Coursework and Achievements */}
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <h5 className="text-accent font-bold text-lg mb-3 flex items-center gap-2">
-                    📚 Relevant Coursework
-                  </h5>
-                  <ul className="space-y-2">
-                    {edu.coursework.map((course, i) => (
-                      <li key={i} className="text-light/70 text-sm flex items-start gap-2">
-                        <span className="text-accent">▸</span>
-                        {course}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {edu.achievements && edu.achievements.length > 0 && (
-                  <div>
-                    <h5 className="text-accent font-bold text-lg mb-3 flex items-center gap-2">
-                      🏆 Achievements
-                    </h5>
-                    <ul className="space-y-2">
-                      {edu.achievements.map((achievement, i) => (
-                        <li key={i} className="text-light/70 text-sm flex items-start gap-2">
-                          <span className="text-accent">★</span>
-                          {achievement}
-                        </li>
-                      ))}
-                    </ul>
+              {/* Header Section */}
+              <div className="text-center mb-8">
+                <h4 className="text-3xl md:text-4xl font-display font-black text-accent mb-3">
+                  {edu.school}
+                </h4>
+                <p className="text-primary font-bold text-xl mb-3">{edu.degree}</p>
+                <div className="flex items-center justify-center gap-6 md:gap-8 text-light/70 flex-wrap">
+                  <div className="flex items-center gap-2">
+                    {/* <span className="text-accent">📅</span> */}
+                    <span className="font-mono text-sm whitespace-nowrap">{edu.duration}</span>
                   </div>
-                )}
+                  <div className="h-4 w-px bg-accent/30 hidden md:block"></div>
+                  <div className="flex items-center gap-2">
+                    {/* <span className="text-accent">🎓</span> */}
+                    <span className="font-mono text-sm whitespace-nowrap">GPA: <span className="text-accent font-bold">{edu.gpa}</span></span>
+                  </div>
+                </div>
               </div>
+
+              {/* Coursework Section */}
+              <div>
+                <h5 className="text-accent font-bold text-lg mb-6 text-center flex items-center justify-center gap-2">
+                  {/* 📚  */}
+                  Relevant Coursework
+                </h5>
+                <div className="flex justify-center">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-3 max-w-4xl">
+                    {edu.coursework.map((course, i) => (
+                      <div key={i} className="flex items-start gap-2 min-w-[280px]">
+                        <span className="text-accent mt-1 flex-shrink-0">▸</span>
+                        <span className="text-light/80 text-sm">{course}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Achievements Section - Only show if there are achievements */}
+              {edu.achievements && edu.achievements.length > 0 && (
+                <div className="mt-8 pt-8 border-t border-white/10">
+                  <h5 className="text-accent font-bold text-lg mb-6 text-center flex items-center justify-center gap-2">
+                    🏆 Achievements
+                  </h5>
+                  <div className="flex justify-center">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-3 max-w-4xl">
+                      {edu.achievements.map((achievement, i) => (
+                        <div key={i} className="flex items-start gap-2 min-w-[280px]">
+                          <span className="text-accent mt-1 flex-shrink-0">★</span>
+                          <span className="text-light/80 text-sm">{achievement}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              )}
             </motion.div>
           ))}
         </div>
@@ -78,24 +89,24 @@ export default function Education() {
           viewport={{ once: true }}
         >
           <h3 className="text-2xl font-display font-bold text-accent mb-6 text-center">
-            Academic Focus Areas
+            Academic Focus 
           </h3>
           <div className="grid md:grid-cols-3 gap-6">
             {[
               {
                 icon: "🤖",
                 title: "Artificial Intelligence",
-                description: "Machine Learning, Deep Learning, NLP"
+                // description: "Machine Learning, Deep Learning, NLP"
               },
               {
                 icon: "💻",
                 title: "Software Engineering",
-                description: "Full-Stack Development, System Design"
+                // description: "Full-Stack Development, System Design"
               },
               {
                 icon: "📊",
                 title: "Mathematics",
-                description: "Discrete Math, Linear Algebra, Statistics"
+                // description: "Discrete Math, Linear Algebra, Statistics"
               }
             ].map((area, index) => (
               <motion.div
@@ -132,7 +143,7 @@ export default function Education() {
             </h3>
             <p className="text-light/80 leading-relaxed text-center">
               The University of Illinois Urbana-Champaign is consistently ranked among the top computer science programs in the world. 
-              The rigorous curriculum, world-class faculty, and vibrant tech community provide the perfect environment for learning, 
+              The curriculum, faculty, and vibrant tech community provide the perfect environment for learning, 
               innovation, and growth. Being part of this community has shaped my technical skills and problem-solving mindset.
             </p>
           </div>
