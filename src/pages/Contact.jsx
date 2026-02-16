@@ -7,30 +7,30 @@ export default function Contact() {
     {
       icon: '📧',
       title: 'Email',
-      value: 'your.email@illinois.edu',
-      link: 'mailto:your.email@illinois.edu',
+      value: 'yashnpatel3@gmail.com',
+      link: 'mailto:yashnpatel3@gmail.com',
       description: 'Drop me a line anytime'
     },
     {
       icon: '💻',
       title: 'GitHub',
-      value: '@yourusername',
-      link: 'https://github.com/yourusername',
+      value: '@yashp20',
+      link: 'https://github.com/yashp20',
       description: 'Check out my code'
     },
     {
       icon: '💼',
       title: 'LinkedIn',
-      value: 'Your Name',
-      link: 'https://linkedin.com/in/yourprofile',
+      value: 'Yashp0320',
+      link: 'www.linkedin.com/in/yashp0320',
       description: "Let's connect professionally"
     },
     {
-      icon: '🐦',
-      title: 'Twitter',
-      value: '@yourusername',
-      link: 'https://twitter.com/yourusername',
-      description: 'Follow my tech journey'
+      icon: '📸',
+      title: 'Instagram',
+      value: '@yash.patel0320',
+      link: 'https://www.instagram.com/yash.patel0320/',
+      description: 'Follow my Instagram'
     }
   ];
 
