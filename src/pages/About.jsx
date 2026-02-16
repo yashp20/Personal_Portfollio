@@ -92,19 +92,19 @@ export default function About() {
             <ul className="space-y-4 text-light/80">
               <li className="flex items-start gap-3">
                 <span className="text-accent text-xl">▸</span>
-                <span>Currently learning Rust and diving deep into systems programming</span>
+                <span>I picked up Pickleball about a year ago and love to play doubles!</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-accent text-xl">▸</span>
-                <span>Maintainer of several open-source projects with 500+ GitHub stars</span>
+                <span>I like to workout and apply the same mindset in the gym as I do in coding</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-accent text-xl">▸</span>
-                <span>Coffee enthusiast ☕ - debugging is 90% better with caffeine</span>
+                <span>I like to play video games with my friends in a compettive manner</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-accent text-xl">▸</span>
-                <span>Vim user (yes, I know how to exit it)</span>
+                <span></span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-accent text-xl">▸</span>
