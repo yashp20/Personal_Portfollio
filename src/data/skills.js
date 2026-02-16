@@ -60,8 +60,8 @@ export const skillCategories = [
       { name: "Git", level: 95 },
       { name: "Vim", level: 85 },
       { name: "VS Code", level: 90 },
-      { name: "JIRA", level: 80 },
-      { name: "Figma", level: 75 }
+      // { name: "JIRA", level: 80 },
+      // { name: "Figma", level: 75 }
     ]
   }
 ];

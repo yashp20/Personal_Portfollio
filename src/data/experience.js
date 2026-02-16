@@ -40,16 +40,16 @@ export const education = [
     gpa: "3.88/4.0",
     coursework: [
       "Data Structures & Algorithms",
-      "Computer Systems",
-      "Database Systems",
-      "Machine Learning",
-      "Distributed Systems",
+      "Discrete Structures",
+      "Introduction to Computer Science",
+      "Software Design Lab",
+      "Numerical Methods",
       "Computer Architecture"
     ],
     achievements: [
-      "Dean's List (All Semesters)",
-      "CS Department Scholarship Recipient",
-      "ACM Programming Competition - 2nd Place"
+      // "Dean's List (All Semesters)",
+      // "CS Department Scholarship Recipient",
+      // "ACM Programming Competition - 2nd Place"
     ]
   }
 ];
