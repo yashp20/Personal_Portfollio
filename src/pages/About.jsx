@@ -133,12 +133,14 @@ export default function About() {
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-accent text-xl">▸</span>
-                <span></span>
+                <span>
+                  Always building or learning something new, from side projects to new tech stacks.
+                  </span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-accent text-xl">▸</span>
                 <span>
-                  Believe that the best code is the code you don't have to write
+                  Focused on writing clean, simple, and efficient code.
                 </span>
               </li>
             </ul>
