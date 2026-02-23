@@ -2,12 +2,12 @@ export const projects = [
   {
     id: 1,
     title: "EcoSphere",
-    description: "Developed a machine learning model that assists researchers in analyzing large datasets. Achieved 94% accuracy in classification tasks using advanced NLP techniques.",
+    description: "EcoSphere is a clean-energy planning platform that helps users evaluate and optimize residential solar installations using real-world environmental and financial data.",
     image: "/images/projects/ecosphere.jpg",
-    tags: ["Python", "TensorFlow", "NLP", "Machine Learning"],
+    tags: ["React", "Tailwind CSS", "FastAPI", "Postman"],
     github: "https://github.com/yourusername/ai-assistant",
-    demo: "https://demo.example.com",
-    featured: true
+    // demo: "https://demo.example.com",
+    featured: false
   },
   // {
   //   id: 2,
