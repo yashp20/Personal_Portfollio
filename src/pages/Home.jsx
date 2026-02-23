@@ -1,22 +1,20 @@
-import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
-import Button from '../components/ui/Button';
-import Container from '../components/layout/Container';
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import Button from "../components/ui/Button";
+import Container from "../components/layout/Container";
 
 export default function Home() {
   return (
     <div className="page-transition">
-
       {/* HERO SECTION */}
       <div className="relative min-h-screen flex flex-col justify-center items-center text-center px-6">
-
         <Container className="py-20">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <motion.h1 
+            <motion.h1
               className="text-5xl md:text-7xl lg:text-8xl font-display font-black mb-6 leading-tight"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -56,14 +54,10 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.9 }}
             >
               <Link to="/projects">
-                <Button variant="primary">
-                  View My Work
-                </Button>
+                <Button variant="primary">View My Work</Button>
               </Link>
               <Link to="/contact">
-                <Button variant="secondary">
-                  Get In Touch
-                </Button>
+                <Button variant="secondary">Get In Touch</Button>
               </Link>
             </motion.div>
           </motion.div>
@@ -96,15 +90,15 @@ export default function Home() {
           transition={{ duration: 0.8 }}
         >
           {[
-            { label: 'GPA', value: '3.8' },
-            { label: 'Technologies', value: '20+' },
-            { label: 'DUPER SCORE', value: '3.2' },
-            { label: 'Coffee Cups', value: '∞' },
+            { label: "GPA", value: "3.8" },
+            { label: "Technologies", value: "20+" },
+            { label: "DUPER SCORE", value: "3.2" },
+            { label: "Coffee Cups", value: "∞" },
           ].map((stat, index) => (
             <motion.div
               key={index}
               className="glass-effect rounded-xl p-6 text-center"
-              whileHover={{ scale: 1.05, borderColor: 'var(--accent)' }}
+              whileHover={{ scale: 1.05, borderColor: "var(--accent)" }}
               transition={{ duration: 0.2 }}
             >
               <div className="text-4xl font-display font-black text-accent mb-2">
@@ -118,6 +112,32 @@ export default function Home() {
         </motion.div>
       </Container>
 
+      {/* RESUME SECTION */}
+      <Container className="pb-28">
+        <motion.div
+          className="glass-effect rounded-2xl p-10 text-center max-w-2xl mx-auto"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <h3 className="text-3xl font-display font-bold text-accent mb-10">
+            View My Resume
+          </h3>
+
+          <motion.a
+            href="/YashResume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 px-10 py-4 bg-gradient-to-r from-primary to-accent text-white font-mono text-sm uppercase tracking-widest rounded-xl shadow-lg"
+            whileHover={{ y: -3, scale: 1.03 }}
+            whileTap={{ scale: 0.97 }}
+          >
+            <span className="text-lg">📄</span>
+            <span>View Resume</span>
+          </motion.a>
+        </motion.div>
+      </Container>
     </div>
   );
 }

@@ -1,37 +1,37 @@
-import { motion } from 'framer-motion';
-import Container from '../components/layout/Container';
-import SectionTitle from '../components/ui/SectionTitle';
+import { motion } from "framer-motion";
+import Container from "../components/layout/Container";
+import SectionTitle from "../components/ui/SectionTitle";
 
 export default function Contact() {
   const contactMethods = [
     {
-      icon: '📧',
-      title: 'Email',
-      value: 'yashnpatel3@gmail.com',
-      link: 'mailto:yashnpatel3@gmail.com',
-      description: 'Drop me a line anytime'
+      icon: "📧",
+      title: "Email",
+      value: "yashnpatel3@gmail.com",
+      link: "mailto:yashnpatel3@gmail.com",
+      description: "Drop me a line anytime",
     },
     {
-      icon: '💻',
-      title: 'GitHub',
-      value: '@yashp20',
-      link: 'https://github.com/yashp20',
-      description: 'Check out my code'
+      icon: "💻",
+      title: "GitHub",
+      value: "@yashp20",
+      link: "https://github.com/yashp20",
+      description: "Check out my code",
     },
     {
-      icon: '💼',
-      title: 'LinkedIn',
-      value: 'Yashp0320',
-      link: 'www.linkedin.com/in/yashp0320',
-      description: "Let's connect professionally"
+      icon: "💼",
+      title: "LinkedIn",
+      value: "Yashp0320",
+      link: "www.linkedin.com/in/yashp0320",
+      description: "Let's connect professionally",
     },
     {
-      icon: '📸',
-      title: 'Instagram',
-      value: '@yash.patel0320',
-      link: 'https://www.instagram.com/yash.patel0320/',
-      description: 'Follow my Instagram'
-    }
+      icon: "📸",
+      title: "Instagram",
+      value: "@yash.patel0320",
+      link: "https://www.instagram.com/yash.patel0320/",
+      description: "Follow my Instagram",
+    },
   ];
 
   return (
@@ -50,9 +50,10 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
           >
             <p className="text-lg text-light/80 leading-relaxed max-w-2xl mx-auto">
-              I'm always open to new opportunities, collaborations, and interesting conversations. 
-              Whether you have a question, want to work together, or just want to say hi, 
-              feel free to reach out through any of the channels below!
+              I'm always open to new opportunities, collaborations, and
+              interesting conversations. Whether you have a question, want to
+              work together, or just want to say hi, feel free to reach out
+              through any of the channels below!
             </p>
           </motion.div>
 
@@ -80,9 +81,7 @@ export default function Contact() {
                 <p className="text-light/90 font-mono text-sm mb-2">
                   {method.value}
                 </p>
-                <p className="text-light/60 text-sm">
-                  {method.description}
-                </p>
+                <p className="text-light/60 text-sm">{method.description}</p>
               </motion.a>
             ))}
           </div>
@@ -99,17 +98,19 @@ export default function Contact() {
               Want to know more?
             </h3>
             <p className="text-light/70 mb-6">
-              Download my resume for a detailed overview of my experience, projects, and skills.
+              Download my resume for a detailed overview of my experience,
+              projects, and skills.
             </p>
             <motion.a
-              href="/resume.pdf"
-              download
-              className="inline-flex items-center gap-3 px-8 py-3 bg-gradient-to-r from-primary to-accent text-white font-mono text-sm uppercase tracking-widest rounded"
-              whileHover={{ y: -3, scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
+              href="/YashResume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 px-10 py-4 bg-gradient-to-r from-primary to-accent text-white font-mono text-sm uppercase tracking-widest rounded-xl shadow-lg"
+              whileHover={{ y: -3, scale: 1.03 }}
+              whileTap={{ scale: 0.97 }}
             >
-              <span>📄</span>
-              <span>Download Resume</span>
+              <span className="text-lg">📄</span>
+              <span>View Resume</span>
             </motion.a>
           </motion.div>
 
