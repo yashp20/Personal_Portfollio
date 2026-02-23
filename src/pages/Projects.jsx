@@ -13,7 +13,7 @@ export default function Projects() {
   return (
     <div className="page-transition pt-32 pb-20">
       <Container>
-        <SectionTitle subtitle="Check out what I've been building">
+        <SectionTitle>
           My Projects
         </SectionTitle>
 
@@ -139,7 +139,7 @@ export default function Projects() {
               Want to see more?
             </h3>
             <p className="text-light/70 mb-8">
-              These are just some highlights. Check out my GitHub for a complete list of projects.
+            Check out my GitHub to view full codebase for my projects.
             </p>
             <motion.a
               href="https://github.com/yashp0320"

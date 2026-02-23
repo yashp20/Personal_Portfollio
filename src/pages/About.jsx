@@ -7,7 +7,9 @@ export default function About() {
   return (
     <div className="page-transition pt-32 pb-20">
       <Container>
-        <SectionTitle subtitle="Get to know me better">About Me</SectionTitle>
+        <SectionTitle >
+          About Me
+        </SectionTitle>
 
         {/* Main content */}
         <motion.div

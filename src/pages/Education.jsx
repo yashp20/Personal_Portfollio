@@ -7,7 +7,7 @@ export default function Education() {
   return (
     <div className="page-transition pt-32 pb-20">
       <Container>
-        <SectionTitle subtitle="My academic journey at UIUC">
+        <SectionTitle >
           Education
         </SectionTitle>
 

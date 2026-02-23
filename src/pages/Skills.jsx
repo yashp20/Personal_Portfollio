@@ -7,7 +7,7 @@ export default function Skills() {
   return (
     <div className="page-transition pt-32 pb-20">
       <Container>
-        <SectionTitle subtitle="My technical expertise and tools I work with">
+        <SectionTitle >
           Skills & Technologies
         </SectionTitle>
 
