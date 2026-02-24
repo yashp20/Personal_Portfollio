@@ -4,9 +4,9 @@ export const projects = [
     title: "EcoSphere",
     description:
       "EcoSphere is a clean-energy planning platform that helps users evaluate and optimize residential solar installations using real-world environmental and financial data.",
-    image: "/images/projects/ecosphere.jpg",
+    image: "/projects/ecosphere.jpg",
     tags: ["React", "Tailwind CSS", "FastAPI", "Postman"],
-    github: "https://github.com/yourusername/ai-assistant",
+    github: "https://github.com/yashp20/EcoSphere.git",
     // demo: "",
     featured: false,
   },
