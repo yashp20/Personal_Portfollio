@@ -29,7 +29,7 @@ export default function Contact() {
       icon: "📸",
       title: "Instagram",
       value: "@yash.patel0320",
-      link: "https://www.instagram.com/yash.patel0320/",
+      link: "https://www.instagram.com/yash.patel0320",
       description: "Follow my Instagram",
     },
   ];

@@ -4,10 +4,10 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { name: 'GitHub', url: 'https://github.com/yourusername', icon: '💻' },
-    { name: 'LinkedIn', url: 'https://linkedin.com/in/yourprofile', icon: '💼' },
-    { name: 'Twitter', url: 'https://twitter.com/yourusername', icon: '🐦' },
-    { name: 'Email', url: 'mailto:your.email@illinois.edu', icon: '📧' },
+    { name: 'GitHub', url: 'https://github.com/yashp20', icon: '💻' },
+    { name: 'LinkedIn', url: 'www.linkedin.com/in/yashp0320', icon: '💼' },
+    { name: 'Twitter', url: 'https://www.instagram.com/yash.patel0320', icon: '📸' },
+    { name: 'Email', url: 'mailto:yashnpatel3@gmail.com', icon: '📧' },
   ];
 
   return (
