@@ -37,6 +37,4 @@ The site is designed to be fast, interactive, and minimal while highlighting rea
 - Resume viewer (opens in a new tab)
 - Contact + social links
 
----
 
-## Project Structure
