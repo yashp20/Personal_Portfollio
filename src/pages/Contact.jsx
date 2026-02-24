@@ -22,7 +22,7 @@ export default function Contact() {
       icon: "💼",
       title: "LinkedIn",
       value: "Yashp0320",
-      link: "www.linkedin.com/in/yashp0320",
+      link: "https://www.linkedin.com/in/yashp0320/",
       description: "Let's connect professionally",
     },
     {

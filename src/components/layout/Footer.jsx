@@ -1,13 +1,13 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { name: 'GitHub', url: 'https://github.com/yashp20', icon: '💻' },
-    { name: 'LinkedIn', url: 'www.linkedin.com/in/yashp0320', icon: '💼' },
-    { name: 'Twitter', url: 'https://www.instagram.com/yash.patel0320', icon: '📸' },
-    { name: 'Email', url: 'mailto:yashnpatel3@gmail.com', icon: '📧' },
+    { name: "GitHub", url: "https://github.com/yashp20", icon: "💻" },
+    { name: "LinkedIn", url: "https://www.linkedin.com/in/yashp0320/", icon: "💼" },
+    {name: "Instagram", url: "https://www.instagram.com/yash.patel0320",icon: "📸",},
+    { name: "Email", url: "mailto:yashnpatel3@gmail.com", icon: "📧" },
   ];
 
   return (
@@ -16,7 +16,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-display font-black text-gradient mb-4">YASH PATEL</h3>
+            <h3 className="text-2xl font-display font-black text-gradient mb-4">
+              YASH PATEL
+            </h3>
             <p className="text-light/60 text-sm">
               Computer Science @ UIUC
               <br />
@@ -26,20 +28,33 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-accent font-display font-bold mb-4">Quick Links</h4>
+            <h4 className="text-accent font-display font-bold mb-4">
+              Quick Links
+            </h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="/resume.pdf" className="text-light/60 hover:text-accent transition-colors">
+                <a
+                  href="/YashResume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-light/60 hover:text-accent transition-colors"
+                >
                   Resume
                 </a>
               </li>
               <li>
-                <a href="#projects" className="text-light/60 hover:text-accent transition-colors">
+                <a
+                  href="#projects"
+                  className="text-light/60 hover:text-accent transition-colors"
+                >
                   Projects
                 </a>
               </li>
               <li>
-                <a href="#contact" className="text-light/60 hover:text-accent transition-colors">
+                <a
+                  href="#contact"
+                  className="text-light/60 hover:text-accent transition-colors"
+                >
                   Get in Touch
                 </a>
               </li>
@@ -68,7 +83,10 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 border-t border-white/10 text-center text-light/40 text-sm">
-          <p>&copy; {currentYear} YASH PATEL. Built & Designed with passion at UIUC.</p>
+          <p>
+            &copy; {currentYear} YASH PATEL. Built & Designed with passion at
+            UIUC.
+          </p>
         </div>
       </div>
     </footer>
