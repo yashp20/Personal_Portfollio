@@ -11,7 +11,7 @@ export const projects = [
     featured: false,
   },
 
-  // // 🔜 PROJECT 2 — READY TO FILL
+  // //  PROJECT 2 — READY TO FILL
   // {
   //   id: 2,
   //   title: "",
@@ -23,7 +23,7 @@ export const projects = [
   //   featured: false,
   // },
 
-  // // 🔜 PROJECT 3 — READY TO FILL
+  // // PROJECT 3 — READY TO FILL
   // {
   //   id: 3,
   //   title: "",
